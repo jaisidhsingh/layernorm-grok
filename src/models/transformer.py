@@ -21,8 +21,8 @@ class TransformerConfig:
     ln_type: str = "off"
     mlp_type: str = "ff"
     mlp_r: int = 4
-    mlp_act: str = "gelu"
-    kernel_init: str = "kaiming"
+    mlp_act: str = "relu"
+    kernel_init: str = "lecun"
     final_ln: str = "off"
     P: int = 113
     dtype: Any = torch.float32
