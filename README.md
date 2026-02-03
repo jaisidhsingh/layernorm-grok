@@ -1,10 +1,10 @@
 # Explaining Grokking in Transformers through the Lens of Inductive Bias
 
-> ICML conference submission 3168
+> Jaisidh Singh, Diganta Misra, Antonio Orvieto
 
-Experiments given in the submission can be reproduced by running the files in the `scripts` folder. We use `wandb` to log all metrics across different seeds. Subsequently, these metrics are aggregated across seeds on the `wandb` console, from where each metric presented in the experiments is downloaded in `csv` format. Finally, the metrics are plotted as given in the `notebooks` folder.
+This repository releases our code to explanably modulate grokking by varying the position of layer normalization (LN) in transformers learning modular addition. Experiments given in the submission can be reproduced by running the files in the `scripts` folder. We use `wandb` to log all metrics across different seeds. Subsequently, these metrics are aggregated across seeds on the `wandb` console, from where each metric presented in the experiments is downloaded in `csv` format.
 
-Note that we use different specifiers in the code for the LN configurations given in the submission. The code specifiers are provided to the `ln_type` subargument of the `model` subconfig. These are defined as follows.
+Note that we use different specifiers in the code for the LN configurations given in our preprint (to be released). The code specifiers are provided to the `ln_type` subargument of the `model` subconfig. These are defined as follows.
 
 1. **No LN**: `off`
 2. **A**$^*$: `attn-pre`
